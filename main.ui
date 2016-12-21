@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QWidget" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Pandora</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>출력 결과</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit"/>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="firstButton">
+       <property name="text">
+        <string>첫번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="secondButton">
+       <property name="text">
+        <string>두번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="thirdButton">
+       <property name="text">
+        <string>세번째 버튼</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>firstButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slot_firstButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>11</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>34</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>secondButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slot_secondButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>142</x>
+     <y>226</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>143</x>
+     <y>249</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>thirdButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slot_thirdButton()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>267</x>
+     <y>228</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>288</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slot_firstButton()</slot>
+  <slot>slot_secondButton()</slot>
+  <slot>slot_thirdButton()</slot>
+ </slots>
+</ui>
